@@ -1,0 +1,325 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background-image: url(menu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin-left: 27px;
+}
+
+a{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.header-text{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 30px;
+    line-height: 2;
+    letter-spacing: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+
+.btn-game{
+    display: block;
+    background-color: firebrick;
+    padding: 0px 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-game::after{
+    content: "Satın Al";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: firebrick;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.btn-game:hover::after{
+    top: 0;
+}
+
+/* HAKKINDA */
+
+.bilgi{
+    margin-bottom: 150px;
+}
+
+.bilgi-tittle{
+    margin: 60px 0;
+}
+
+.bilgi-tittle h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(17, 17, 17);
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.bilgi-tittle h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.bilgi-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bilgi-img{
+    width: 45%;
+}
+
+.bilgi-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bilgi-text{
+    width: 40%;
+}
+
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(17, 17, 17);
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+.bilgi-textp{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(17, 17, 17);
+}
+
+/* MAGAZA */
+
+.magaza{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.magaza-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.magaza-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.magaza-item:hover .overlay{
+    top: 0;
+}
+
+.magaza-item:hover img{
+    transform: scale(1.1);
+}
+
+/* DESTEK */
+
+.destek{
+    padding: 10px;
+}
+
+.destek h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(17, 17, 17);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.destek h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.destek-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.destek-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.destek-item h7{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.destek-item p{
+    font-size: 14px;
+    line-height: 33px;
+}
+
+/* FOOTER */
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px;
+}
+
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.footer{
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-copyright{
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
